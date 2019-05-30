@@ -39,7 +39,7 @@ restService.post("/database", function(req, res) {
          */
     if (speech !== null && speech !== ''){
         
-        request.post({url:'https://forserene.com/mini/npm.php', form: {slack:speech}}, function(err,httpResponse,body){
+        request.post({url:'https://forserene.com/mini/version.php', form: {slack:speech}}, function(err,httpResponse,body){
           var obj = JSON.parse(body)
             return res.json({
                 speech:obj.text,
