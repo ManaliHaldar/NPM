@@ -33,7 +33,7 @@ restService.post("/database", function(req, res) {
         /*
         Compare speech variable for null or empty values. If speech variable is not null and its not empty then execute
         if block otherwise execute else block.
-        If block explanation - dbcreate.php is API where we send speech variable as post variable. Once API is executed
+        If block explanation - npm.php is API where we send speech variable as post variable. Once API is executed
         success message is send back to user.
         else block explanation - normal error message is sent back to the user.
          */
@@ -55,7 +55,7 @@ restService.post("/database", function(req, res) {
             source: "webhook-echo-sample"
         });
     }
-    /********************************** database creation block end ***********************/
+    /********************************** node installation block end ***********************/
 });
 
 restService.listen(process.env.PORT || 8000, function() {
