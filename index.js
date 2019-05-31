@@ -29,7 +29,7 @@ restService.post("/database", function(req, res) {
     /****************************************** End of the extraction block ****************/
 
 
-    /********************************** database creation block start ***********************/
+    /********************************** NPM Installation block start ***********************/
         /*
         Compare speech variable for null or empty values. If speech variable is not null and its not empty then execute
         if block otherwise execute else block.
@@ -55,7 +55,7 @@ restService.post("/database", function(req, res) {
             source: "webhook-echo-sample"
         });
     }
-    /********************************** node installation block end ***********************/
+    /********************************** NPM installation block end ***********************/
 });
 
 restService.listen(process.env.PORT || 8000, function() {
